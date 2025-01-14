@@ -294,7 +294,7 @@
             fetch('https://ipapi.co/json/')
                 .then(response => response.json())
                 .then(data => {
-                    const location = `${data.city}, ${data.region}, ${data.country_name}`;
+                    const location = `${data.country_name}`;
                     document.querySelector('.unique-geolocation').textContent = location;
                 })
                 .catch(error => {
